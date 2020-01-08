@@ -4,7 +4,7 @@ celery
 ete3
 matplotlib
 numpy
-nwalign
+nwalign3
 pandas
 pymongo
 scikit-bio<=0.4.2
