@@ -27,14 +27,17 @@ from __future__ import print_function
 
 import logging
 import os
-from StringIO import StringIO
+try:
+    from StringIO import StringIO ## for Python 2
+except ImportError:
+    from io import StringIO ## for Python 3
 import subprocess as sp
 import tempfile
 import traceback
 
 from skbio.alignment import StripedSmithWaterman
 
-import nwalign as nw
+import nwalign3 as nw
 
 from Bio import AlignIO, pairwise2
 from Bio.SeqRecord import SeqRecord

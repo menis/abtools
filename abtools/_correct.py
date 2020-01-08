@@ -26,7 +26,10 @@ import os
 # import paramiko
 import shelve
 import sqlite3
-from StringIO import StringIO
+try:
+    from StringIO import StringIO ## for Python 2
+except ImportError:
+    from io import StringIO ## for Python 3
 import subprocess as sp
 import sys
 import tempfile

@@ -1,7 +1,7 @@
 nose
 biopython
 celery
-ete2
+ete3
 matplotlib
 numpy
 nwalign

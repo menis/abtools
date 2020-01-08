@@ -26,7 +26,7 @@
 import os
 import subprocess as sp
 
-import ete2
+import ete3
 
 
 
